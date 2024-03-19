@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,400;1,500&display=swap"); 
+
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.design{
+    width: 100%;
+    height:100vh;
+    text-shadow: blue;
+    background-image: rgba(0, 0, 0, 0.042);
+    background: linear-gradient(url(12.jpg));
+    /* background:url(dustbinEwastehome.jpeg);    */
+     
+     
+      background: url(dustleft1.jpg); 
+
+    background-size: cover;
+    font-family:"Roboto" "sans-serif" ;
+}
+nav{
+    width: 100%;
+    height: 11%;
+    color: #fff;
+    align-self: center;
+    background-color:rgb(54, 52, 52);
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size:50px;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+/* .Signup a:hover::before{
+    width: 90px;
+}
+.Signup a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    /* border-radius: 8px; 
+    background: indianred;
+}
+.Signup a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+} */
+
+
+.h-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    max-width:650px;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.h-text span{
+    letter-spacing: 5px;
+    font-size: 40px;
+    
+}
+.h-text h1{
+    font size: 50px;
+    color:orange;
+    text:bold;
+}
+.h-text a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 10px;
+    letter-spacing: 5px;
+    background-color:rgb(13, 249, 107);
+    transition: 0.4s;
+    
+    color:Red;
+}
+.h-text a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+
+h1{
+    background-color: rgb(246, 240, 240);
+
+
+    transition: 0.4s;
+}
+.h1 a:hover{
+    border: 1px solid indianred;
+    
+    background-color: transparent;
+}

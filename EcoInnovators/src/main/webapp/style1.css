@@ -1,0 +1,92 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: mediumseagreen;
+}
+
+
+.login-box {
+    background-color: mintcream;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.login-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.login-box marquee {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+input[type="radio"] {
+	display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+#submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.para-2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.para-2 a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}

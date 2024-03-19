@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Sign Up</h1>
+        <marquee><h4>Give Your Contribution Towards Your Nature</h4></marquee>
+        <form action="signup" method="post" id="signupForm">
+			<input type="radio" id="bus" name="user1" value="Business">
+			<label for="bus">Businesses</label>
+			<input type="radio" id="gov" name="user1" value="Government">
+			<label for="gov">Government</label>
+			<input type="radio" id="con" name="user1" value="Consumer">
+			<label for="con">Consumer</label><br>
+        	<label>First Name:</label>
+            <input type ="text" placeholder="Enter First name" name="fn" required><br>
+            <label>Last Name:</label>
+            <input type ="text" placeholder="Enter Last name" name="ln" required><br>
+            <label>Email  Id : </label>  
+            <input type="email" placeholder="Enter Email:" name="email" required><br>
+            <label>Business Name:</label>
+            <input type ="text" placeholder="Enter your Business Name" name="bn" required><br>
+            <label>GSTIN:</label>
+            <input type ="text" placeholder="Enter GSTIN" name="gstin" required><br>
+            <label>Date of Incorporation:</label>
+            <input type ="date" name="doinc" required><br>
+            <label>Date of Birth</label>
+            <input type ="date" name="dob" required><br>
+            <label>Date of Joining:</label>
+            <input type ="date" name="doinc" required><br>
+            <label>Contact Number:</label>
+            <input type ="text" placeholder="Enter Contact Number:" name="contact" required><br>
+            <label>Aadhar No.:</label>
+            <input type ="text" placeholder="Enter Aadhar Number:" name="contact" required><br>
+       		<label>Password  :</label>
+            <input type="password"placeholder="Enter the password" name="pwd" id="pwd" required><br>
+            <label>Confirm Password  :</label>
+            <input type="password"placeholder="Confirm the password" id="pwd1"name="pwd1" required>
+            <br>
+            <input type="Submit" name="submit" id="submit">
+        </form>
+        
+        <p>By clicking the Sign Up button,you agree to our<br>
+        <a href ="tc.html">Terms and Condition</a> and <a href="pp.html">Policy And Privacy</a>
+        </p>
+    </div>
+    <p class="para-2">Already have an account? <a href="login.html">Login here</a></p>
+
+</body>
+</html>

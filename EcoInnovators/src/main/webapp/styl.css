@@ -1,0 +1,86 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: mediumseagreen;
+}
+
+/* Style the login container */
+.login-box {
+    background-color: mintcream;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the login form header */
+.login-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the form labels */
+label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style the CAPTCHA image */
+img[alt="CAPTCHA"] {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style the radio buttons and labels */
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Style the "Sign Up Here" link */
+.para-2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.para-2 a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}

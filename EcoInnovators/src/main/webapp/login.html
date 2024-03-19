@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginForm</title>
+   <link rel="stylesheet" href="styl.css"> 
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form action="login" method="post">
+			<input type="radio" id="adm" name="user" value="Admin">
+			<label for="adm">Admin</label>
+			<input type="radio" id="bus" name="user" value="Business">
+			<label for="bus">Businesses</label>
+			<input type="radio" id="gov" name="user" value="Government">
+			<label for="gov">Government</label>
+			<input type="radio" id="con" name="user" value="Consumer">
+			<label for="con">Consumer</label><br>
+            <label>Email</label><br>
+            <input type="email" name="email">
+            <label>Password</label>
+            <input type="password"placeholder="Enter the password" name="pwd">
+            <img src="CaptchaServlet" alt="CAPTCHA">
+            <input type="text" name="captcha_input" placeholder="Enter CAPTCHA">
+            <input type="submit">
+        </form>
+    </div>
+    <p class="para-2">Not have an account? <a href="signup.html">Sign Up Here</a></p>
+    <script>
+		document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (event) {
+        const emailInput = document.querySelector('input[name="email"]');
+        const passwordInput = document.querySelector('input[name="pwd"]');
+        const radioButtons = document.querySelectorAll('input[name="user"]');
+
+        let isValid = true;
+
+        if (emailInput.value.trim() === "") {
+            isValid = false;
+            alert("Please fill in the Email field.");
+        }
+
+        if (passwordInput.value.trim() === "") {
+            isValid = false;
+            alert("Please fill in the Password field.");
+        }
+
+        let radioButtonChecked = false;
+        for (const radioButton of radioButtons) {
+            if (radioButton.checked) {
+                radioButtonChecked = true;
+                break;
+            }
+        }
+
+        if (!radioButtonChecked) {
+            isValid = false;
+            alert("Please select a user type.");
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+});
+
+	</script>
+</body>
+</html>
